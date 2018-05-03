@@ -82,6 +82,7 @@ export default {
   overflow-x: hidden;
   overflow-y: hidden;
   background-color: #fafafa;
+  padding-bottom: 75px;
 }
 
 .event-item {
