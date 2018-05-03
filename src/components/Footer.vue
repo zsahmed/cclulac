@@ -5,6 +5,12 @@
           <h4>Contact Us</h4>
           <span class="contact-span">xxxxxx@gmail.com</span>
           <span class="contact-span">214.555.5555</span>
+          <a href="https://github.com/zsahmed" class="fb-icon">
+            <i class="fab fa-facebook-square fa-2x"></i>
+          </a>
+          <a href="https://github.com/zsahmed" class="fb-icon">
+            <i class="fab fa-twitter fa-2x"></i>
+          </a>
       </div>
       <div class="col-md-4 middle">
       </div>
@@ -91,5 +97,13 @@ a:hover {
   color: #F0FFFF;
   display: block;
   margin-left: 10px;
+}
+
+.fb-icon {
+  margin-left: 10px;
+}
+
+i {
+  margin-top: 5px;
 }
 </style>
