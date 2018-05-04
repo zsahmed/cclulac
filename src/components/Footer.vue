@@ -3,12 +3,12 @@
     <div class="container">
       <div class="col-md-4 left">
           <h4>Contact Us</h4>
-          <span class="contact-span">xxxxxx@gmail.com</span>
+          <span class="contact-span">CCLULAC@yahoo.com</span>
           <span class="contact-span">214.555.5555</span>
-          <a href="https://github.com/zsahmed" class="fb-icon">
+          <a href="https://www.facebook.com/Collin-County-LULAC-Council-4537-116693833582/" class="fb-icon">
             <i class="fab fa-facebook-square fa-2x"></i>
           </a>
-          <a href="https://github.com/zsahmed" class="fb-icon">
+          <a href="https://twitter.com/CCLULAC" class="fb-icon">
             <i class="fab fa-twitter fa-2x"></i>
           </a>
       </div>

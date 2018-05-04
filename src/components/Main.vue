@@ -38,6 +38,28 @@
       </div>
     </div>
 
+    <div class="scholarship-container">
+
+        <div class="col-md-6 scholarship-content">
+          <h1 class="scholarship-header">Scholarship</h1>
+
+          <p class="scholarship-intro">LULAC Council 4537 proudly provides scholarships to students meeting the following criteria:</p>
+          <span class="scholarship-crit">Highschool graduates who attended a public or private school in Collin County.</span>
+          <span class="scholarship-crit">Returning college students from Collin County.</span>
+
+          <a href="http://www.cclulac.org/yahoo_site_admin/assets/docs/Scholarship_Application.31152147.pdf"
+            class="btn btn-primary dl-btn">Download 2018 Application</a>
+
+        </div>
+        <div class="col-md-6">
+          <img src="../assets/scholarship-reception-2016.png" class="scholarship-reception-img">
+        </div>
+
+
+    </div>
+
+    </div>
+
   </div>
 </template>
 
@@ -116,6 +138,26 @@ export default {
   display: block;
 }
 
+.scholarship-container {
+  display: table; /* Make the container element behave like a table */
+  width: 100%; /* Set full-width to expand the whole page */
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-color: white;
+  padding-bottom: 75px;
+}
+
+.scholarship-content {
+  padding-left: 25px;
+}
+
+.scholarship-reception-img {
+  max-height: 400px;
+  margin: auto;
+  margin-top: 60px;
+  display: block;
+}
+
 span {
   display: block;
   margin: 10px;
@@ -149,6 +191,31 @@ h1 {
 .events-header {
   border-bottom: 4px solid #34495e;
   width: 100px;
+}
+
+.scholarship-header {
+  /* border-bottom: 4px solid #34495e; */
+  width: 173px;
+}
+
+.scholarship-intro {
+  text-align: left;
+  font-size: 20px;
+  margin-left: 0px;
+  margin-bottom: 25px;
+}
+
+.scholarship-crit {
+  text-align: left;
+  font-size: 18px;
+  margin-left: 0px;
+  margin-bottom: 15px;
+  padding-left: 5px;
+  border-left: 4px solid #34495e;
+}
+
+.dl-btn {
+  margin-top: 200px;
 }
 
 @media screen and (max-width: 1200px){
