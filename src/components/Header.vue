@@ -10,9 +10,6 @@
           <router-link to="/youth-council" activeClass="active" tag="li"><a>Youth Council</a></router-link>
           <router-link to="/about" activeClass="active" tag="li"><a>About</a></router-link>
         </ul>
-        <!-- <ul class="nav navbar-nav navbar-right">
-          <li><a href="https://s3.amazonaws.com/zakariya.solutions/resume.pdf">Resume</a></li>
-        </ul> -->
       </div>
     </div>
   </nav>
