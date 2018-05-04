@@ -55,7 +55,33 @@
           <img src="../assets/scholarship-reception-2016.png" class="scholarship-reception-img">
         </div>
 
+    </div>
 
+    <div class="faq-container">
+      <div class="col-md-6">
+        <img src="../assets/scholarship1.jpg" class="scholarship-reception-img">
+      </div>
+      <div class="col-md-6">
+        <h1 class="faq-header">Scholarship FAQ</h1>
+
+        <div class="faq-q-item">
+          <span class="faq-text">Can I apply if I attend a university outside of Collin County?</span>
+        </div>
+        <div class="faq-a-item first-faq">
+          <span class="faq-text">You may apply as long as you are from Collin County.</span>
+        </div>
+
+        <div class="faq-q-item">
+          <span class="faq-text">I am graduating from a HS in Tarrant County. Can I apply for your scholarship?</span>
+        </div>
+        <div class="faq-a-item">
+          <span class="faq-text">
+            No. You are not eligible for our scholarship based on the location of your HS.
+            You can search for a LULAC Council in your area that provides scholarships by visiting LNESC.org.
+          </span>
+        </div>
+
+      </div>
     </div>
 
     </div>
@@ -216,6 +242,47 @@ h1 {
 
 .dl-btn {
   margin-top: 200px;
+}
+
+.faq-container {
+  display: table; /* Make the container element behave like a table */
+  width: 100%; /* Set full-width to expand the whole page */
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-color: #fafafa;
+  padding-bottom: 75px;
+}
+
+.faq-q-item {
+  color: white;
+  background: rgba(0,0,0,0.5);
+  border-left: 3px solid #383838;
+  width: 75%;
+}
+
+.faq-text {
+  font-size: 18px;
+  color: white;
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  padding-left: 5px;
+  margin-bottom: 0px;
+}
+
+.faq-a-item {
+  color: white;
+  background: #5F9F9F;
+  border-left: 3px solid #2F4F4F;
+  width: 75%;
+}
+
+.first-faq {
+  margin-bottom: 85px;
+}
+
+.faq-header {
+  margin-bottom: 25px;
 }
 
 @media screen and (max-width: 1200px){
