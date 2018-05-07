@@ -7,7 +7,7 @@
       </div> -->
     </div>
 
-    <hr>
+    <hr class="landing-page-divide">
 
     <div class="events-container">
       <div class="col-md-6 visible-md visible-lg">
@@ -82,6 +82,74 @@
         </div>
 
       </div>
+    </div>
+
+    <div class="membership-container">
+
+        <div class="col-md-6 membership-content">
+          <h1 class="membership-header">Membership</h1>
+
+          <div class="faq-q-item">
+            <span class="faq-text">
+              Subscription to the LULAC News
+            </span>
+          </div>
+          <div class="faq-q-item">
+            <span class="faq-text">
+              Invitation to attend national and local events including our annual convention and exposition and training institutes at discounted member rate
+            </span>
+          </div>
+          <div class="faq-q-item">
+            <span class="faq-text">
+              Periodic updates on legislative issues and social affairs
+            </span>
+          </div>
+          <div class="faq-q-item">
+            <span class="faq-text">
+              A strong and influential national voice supported by thousands of other LULAC members across the U.S. & Puerto Rico
+            </span>
+          </div>
+          <div class="faq-q-item">
+            <span class="faq-text">
+              The opportunity of participating more fully in your community through volunteer activities and local council events
+            </span>
+          </div>
+
+          <div class="dues">
+            <h3 class="dues-header">Dues</h3>
+            <div class="col-md-12 no-left-pad">
+              <p class="dues-p">Dues are payable by check or money order to: Collin County Lulac 4573</p>
+              <p class="dues-p">
+                Annual Lulac 4573 dues are $30 per person or $50 per couples. Dues can be paid in person at our monthly meetings
+                or mailed to:
+              </p>
+            </div>
+
+            <div class="col-md-12 no-left-pad">
+              <div class="dues-address">
+                <p class="address-line">CC LULAC #4537 <br>c/o Lolly Flores <br>P.O. Box 861125 <br>Plano, TX 75086 </p>
+              </div>
+            </div>
+
+            <p class="dues-p col-md-12 no-left-pad">Please include your contact information ( phone / email )</p>
+          </div>
+
+
+        </div>
+
+        <div class="col-md-6">
+
+          <div class="col-md-12">
+            <img src="../assets/membership2.jpg" class="scholarship-reception-img-top">
+          </div>
+
+          <div class="col-md-12">
+            <img src="../assets/membership3.jpg" class="scholarship-reception-img-bottom">
+          </div>
+
+        </div>
+
+
     </div>
 
     </div>
@@ -177,11 +245,16 @@ export default {
   padding-left: 25px;
 }
 
-.scholarship-reception-img {
-  max-height: 400px;
+.scholarship-reception-img-top {
+  max-height: 450px;
   margin: auto;
-  margin-top: 60px;
-  display: block;
+  margin-top: 78px;
+}
+
+.scholarship-reception-img-bottom {
+  max-height: 450px;
+  margin: auto;
+  margin-top: 100px;
 }
 
 span {
@@ -202,7 +275,7 @@ span {
    }
  }
 
-hr {
+.landing-page-divide {
   margin: 0 auto 0 auto;
   border-top: 5px solid #34495e;
   animation-name: line_animation;
@@ -283,6 +356,51 @@ h1 {
 
 .faq-header {
   margin-bottom: 25px;
+}
+
+.membership-container {
+  display: table; /* Make the container element behave like a table */
+  width: 100%; /* Set full-width to expand the whole page */
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-color: #34495e;
+  color: white;
+  padding-bottom: 75px;
+}
+
+.membership-content {
+  padding-left: 25px;
+}
+
+.membership-header {
+  margin-bottom: 25px;
+}
+
+.dues {
+  width: 75%;
+}
+
+.dues-header {
+  margin-top: 100px;
+  margin-bottom: 25px;
+}
+
+.dues-p {
+  font-size: 16px;
+}
+
+.address-line {
+  padding: 15px 10px 15px 10px;
+}
+
+.dues-address {
+  background: rgba(0,0,0,0.5);
+  width: 40%;
+  margin: 25px auto 35px auto;
+}
+
+.no-left-pad {
+  padding-left: 0;
 }
 
 @media screen and (max-width: 1200px){
