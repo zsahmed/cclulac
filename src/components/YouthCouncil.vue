@@ -177,7 +177,7 @@ export default {
   margin-left: 15px;
   margin-bottom: 30px;
   padding-bottom: 5px;
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid #141d25;
   width: 70%;
 }
 
