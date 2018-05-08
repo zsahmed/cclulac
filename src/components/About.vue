@@ -1,9 +1,38 @@
 <template lang="html">
   <div class="about">
+    <div class="landingPage">
+
+    </div>
 
     <div class="banner-container">
       <h1 class="banner-header">CELEBRATING 25 YEARS</h1>
       <h3 class="banner-sub-header">Serving Collin County Since 1993</h3>
+    </div>
+
+    <div class="about-us-container">
+      <div class="col-md-8">
+        <h1 class="about-us-header">About Collin County LULAC</h1>
+        <p class="about-us-text">
+          Chartered in 1993, Collin County LULAC Council #4537 members take pride in raising funds for local scholarships through the LULAC Council
+          #4537 Scholarship Fund. We invest in Collin County! Our members are local educators, small business owners, veterans, health care providers,
+          employees of major corporations and retirees. We are all volunteers. Collin County LULAC does not have a paid staff.
+        </p>
+        <p class="about-us-text">
+          In 1996, the Collin County LULAC Youth Council #298 was chartered under the supervision of Collin County LULAC Council #4537. Since its
+          inception, the Youth Council has maintained a 100% on time high school graduation rate. Most members come from various high schools in Collin
+          County. Some members are students in schools outside of Collin County. Visit the Youth Council tab at the top of the page to learn more about
+          becoming a member. Membership is always open to both the Adult and Youth Councils.
+        </p>
+        <h1 class="mission-statement-header">Mission Statement</h1>
+        <p class="mission-statement-text">
+           The mission of the League of United Latin American Citizens is to advance the economic condition, educational attainment,
+           health and civil rights of the Hispanic population in the United States.
+        </p>
+      </div>
+      <div class="col-md-4 about-us-img">
+        <img src="../assets/about/membership.jpg">
+      </div>
+
     </div>
 
     <div class="leadership-container">
@@ -47,7 +76,7 @@
 
     <div class="history-container">
       <div class="col-md-8">
-        <h1>History</h1>
+        <h1 class="history-header">History</h1>
 
         <div class="one-for-all">
           <h4 class="history-sub-title">All For One And One For All</h4>
@@ -85,7 +114,7 @@
 
       </div>
       <div class="col-md-4">
-        <img src="../assets/about/hist1.jpg" class="hist1-img">
+          <img src="../assets/about/hist1.jpg" class="hist1-img">
       </div>
     </div>
 
@@ -101,6 +130,14 @@ export default {
 .about {
   font-family: 'Muli';
 }
+
+.landingPage {
+    background-image: url("../assets/about/about-landing.png");
+    background-size: cover;
+    width: 100%;
+    height: 550px;
+    margin: 0px;
+  }
 
 .banner-container {
   display: table; /* Make the container element behave like a table */
@@ -121,6 +158,46 @@ export default {
   text-align: center;
 }
 
+.about-us-container {
+  display: table; /* Make the container element behave like a table */
+  width: 100%; /* Set full-width to expand the whole page */
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-color: #f6f6f6;
+}
+
+.about-us-header {
+  text-align: center;
+  margin-top: 50px;
+  margin-left: -70px;
+  margin-bottom: 0;
+}
+
+.about-us-text {
+  text-align: center;
+  width: 80%;
+  margin: 30px auto auto auto;
+  line-height: 2.0;
+}
+
+.about-us-img {
+  margin-left: -70px;
+  max-height: 900px;
+}
+
+.mission-statement-text {
+  text-align: center;
+  width: 80%;
+  margin: 30px auto auto auto;
+  line-height: 2.0;
+}
+
+.mission-statement-header {
+  text-align: center;
+  margin-top: 100px;
+  margin-left: -70px;
+}
+
 .leadership-container {
   display: table; /* Make the container element behave like a table */
   width: 100%; /* Set full-width to expand the whole page */
@@ -132,8 +209,7 @@ export default {
 }
 
 .leadership-header {
-  margin: auto auto 50px auto;
-  padding-top: 25px;
+  margin: 50px auto 50px auto;
   text-align: center;
 }
 
@@ -174,6 +250,10 @@ export default {
   padding-bottom: 75px;
 }
 
+.history-header {
+  margin-top: 25px;
+}
+
 .history-sub-title {
   font-size: 20px;
   margin-left: 15px;
@@ -193,7 +273,7 @@ export default {
 }
 
 .hist1-img {
-  margin-top: 75px;
+  margin-top: 150px;
 }
 
 h1 {
