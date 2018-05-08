@@ -140,11 +140,11 @@
         <div class="col-md-6">
 
           <div class="col-md-12">
-            <img src="../assets/membership2.jpg" class="scholarship-reception-img-top">
+            <img src="../assets/membership2.jpg" class="membership-img-top">
           </div>
 
           <div class="col-md-12">
-            <img src="../assets/membership3.jpg" class="scholarship-reception-img-bottom">
+            <img src="../assets/membership3.jpg" class="membership-img-bottom">
           </div>
 
         </div>
@@ -247,18 +247,6 @@ export default {
 
 .scholarship-reception-img {
   margin-top: 70px;
-}
-
-.scholarship-reception-img-top {
-  max-height: 450px;
-  margin: auto;
-  margin-top: 78px;
-}
-
-.scholarship-reception-img-bottom {
-  max-height: 450px;
-  margin: auto;
-  margin-top: 100px;
 }
 
 span {
@@ -378,6 +366,18 @@ h1 {
 
 .membership-header {
   margin-bottom: 25px;
+}
+
+.membership-img-top {
+  max-height: 450px;
+  margin: auto;
+  margin-top: 78px;
+}
+
+.membership-img-bottom {
+  max-height: 450px;
+  margin: auto;
+  margin-top: 100px;
 }
 
 .dues {
