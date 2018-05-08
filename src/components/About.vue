@@ -1,6 +1,11 @@
 <template lang="html">
   <div class="about">
 
+    <div class="banner-container">
+      <h1 class="banner-header">CELEBRATING 25 YEARS</h1>
+      <h3 class="banner-sub-header">Serving Collin County Since 1993</h3>
+    </div>
+
     <div class="leadership-container">
       <h1 class="leadership-header">Leadership Team</h1>
 
@@ -97,6 +102,25 @@ export default {
   font-family: 'Muli';
 }
 
+.banner-container {
+  display: table; /* Make the container element behave like a table */
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-color: #34495e;
+  color: white;
+  padding: 50px 0 50px 0;
+}
+
+.banner-header {
+  text-align: center;
+  font-size: 72px;
+}
+
+.banner-sub-header {
+  text-align: center;
+}
+
 .leadership-container {
   display: table; /* Make the container element behave like a table */
   width: 100%; /* Set full-width to expand the whole page */
@@ -117,7 +141,7 @@ export default {
   color: white;
   background: rgba(0,0,0,0.5);
   border-bottom: 3px solid #383838;
-  height: 100px;
+  height: 90px;
   width: 70%;
   margin: 5px auto 5px auto;
 }
