@@ -1,11 +1,7 @@
 <template lang="html">
   <div class="main">
 
-    <div class="landingPage">
-      <!-- <div class="landing-page-text-container">
-        <span class="landing-page-text">Welcome!</span>
-      </div> -->
-    </div>
+    <div class="landingPage"></div>
 
     <hr class="landing-page-divide">
 
