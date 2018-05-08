@@ -1,5 +1,45 @@
 <template lang="html">
   <div class="about">
+
+    <div class="leadership-container">
+      <h1 class="leadership-header">Leadership Team</h1>
+
+      <div class="col-md-6">
+        <div class="leadership-item">
+          <span class="leadership-text">Coty Rodriguez</span>
+          <span class="leadership-sub-text">President</span>
+        </div>
+        <div class="leadership-item">
+          <span class="leadership-text">Adrian Rodriguez</span>
+          <span class="leadership-sub-text">Vice President</span>
+        </div>
+        <div class="leadership-item">
+          <span class="leadership-text">Shannon Rodriguez Anderson</span>
+          <span class="leadership-sub-text">Vice President for Youth</span>
+        </div>
+        <div class="leadership-item">
+          <span class="leadership-text">Sondra Ford</span>
+          <span class="leadership-sub-text">Vice President for Women</span>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="leadership-item">
+          <span class="leadership-text">Lolly Flores</span>
+          <span class="leadership-sub-text">Treaurer</span>
+        </div>
+        <div class="leadership-item">
+          <span class="leadership-text">Mary Alice Garza</span>
+          <span class="leadership-sub-text">Secretary</span>
+        </div>
+        <div class="leadership-item">
+          <span class="leadership-text">Mike Flores</span>
+          <span class="leadership-sub-text">Sgt. At Arms</span>
+        </div>
+      </div>
+
+    </div>
+
     <div class="history-container">
       <div class="col-md-8">
         <h1>History</h1>
@@ -55,6 +95,50 @@ export default {
 <style lang="css">
 .about {
   font-family: 'Muli';
+}
+
+.leadership-container {
+  display: table; /* Make the container element behave like a table */
+  width: 100%; /* Set full-width to expand the whole page */
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-color: #34495e;
+  color: white;
+  padding-bottom: 75px;
+}
+
+.leadership-header {
+  margin: auto auto 50px auto;
+  padding-top: 25px;
+  text-align: center;
+}
+
+.leadership-item {
+  color: white;
+  background: rgba(0,0,0,0.5);
+  border-bottom: 3px solid #383838;
+  height: 100px;
+  width: 70%;
+  margin: 5px auto 5px auto;
+}
+
+.leadership-text {
+  font-size: 24px;
+  color: white;
+  text-align: left;
+  padding-top: 15px;
+  padding-left: 15px;
+  margin-bottom: 0px;
+  display: block;
+}
+
+.leadership-sub-text {
+  font-size: 18px;
+  color: white;
+  text-align: left;
+  padding-left: 15px;
+  padding-bottom: 15px;
+  margin-top: 0px;
 }
 
 .history-container {
