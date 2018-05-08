@@ -15,7 +15,12 @@
       <div class="col-md-4 middle">
       </div>
       <div class="col-md-4 right">
-          <h6><a href="https://lulac.org">lulac.org</a></h6>
+
+        <a href="https://lulac.org" class="lulac-link">
+          <img src="../assets/lulac-shield.png" class="lulac-ico">
+          <h6>lulac.org</h6>
+        </a>
+
       </div>
     </div>
   </nav>
@@ -60,7 +65,7 @@ export default {
 
 .right {
   text-align: right;
-  margin-top: 12px;
+  margin-top: 30px;
   margin-bottom: 12px;
 }
 
@@ -73,7 +78,6 @@ h4 {
 h6 {
   color: #F0FFFF;
   display: inline-block;
-  margin-left: 7px;
 }
 
 hr {
@@ -101,6 +105,15 @@ a:hover {
 
 .fb-icon {
   margin-left: 10px;
+}
+
+.lulac-ico {
+  max-width: 50px;
+  max-height: 50px;
+}
+
+.lulac-link {
+  padding-top: 10px;
 }
 
 i {

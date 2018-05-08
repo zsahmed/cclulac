@@ -219,7 +219,7 @@ export default {
 .leadership-item {
   color: white;
   background: rgba(0,0,0,0.5);
-  border-bottom: 3px solid #383838;
+  border-bottom: 3px solid #5e4934;
   height: 90px;
   width: 70%;
   margin: 5px auto 5px auto;
