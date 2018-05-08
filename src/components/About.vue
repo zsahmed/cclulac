@@ -114,7 +114,10 @@
 
       </div>
       <div class="col-md-4">
+        <div class="hist1-section">
           <img src="../assets/about/hist1.jpg" class="hist1-img">
+          <span class="hist1-text">First LULAC Convention, Corpus Christi TX, 1929</span>
+        </div>
       </div>
     </div>
 
@@ -272,8 +275,16 @@ export default {
   margin-top: 75px;
 }
 
+.hist1-section {
+  margin-top: 75px;
+}
+
 .hist1-img {
-  margin-top: 150px;
+  margin-bottom: 10px;
+}
+
+.hist1-text {
+  display: block;
 }
 
 h1 {
