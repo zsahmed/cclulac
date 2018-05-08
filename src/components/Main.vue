@@ -245,6 +245,10 @@ export default {
   padding-left: 25px;
 }
 
+.scholarship-reception-img {
+  margin-top: 70px;
+}
+
 .scholarship-reception-img-top {
   max-height: 450px;
   margin: auto;
