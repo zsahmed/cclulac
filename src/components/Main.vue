@@ -44,8 +44,11 @@
           <span class="scholarship-crit">Highschool graduates who attended a public or private school in Collin County.</span>
           <span class="scholarship-crit">Returning college students from Collin County.</span>
 
-          <a href="http://www.cclulac.org/yahoo_site_admin/assets/docs/Scholarship_Application.31152147.pdf"
-            class="btn btn-primary dl-btn">Download 2018 Application</a>
+<div class="dl-btn">
+  <a href="http://www.cclulac.org/yahoo_site_admin/assets/docs/Scholarship_Application.31152147.pdf"
+    class="btn btn-primary ">Download 2018 Application</a>
+</div>
+
 
         </div>
         <div class="col-md-6">
@@ -303,7 +306,8 @@ h1 {
 }
 
 .dl-btn {
-  margin-top: 200px;
+  margin: 50px auto;
+  text-align: center;
 }
 
 .faq-container {
