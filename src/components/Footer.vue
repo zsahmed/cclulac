@@ -3,8 +3,8 @@
     <div class="container">
       <div class="col-md-4 left">
           <h4>Contact Us</h4>
-          <span class="contact-span">CCLULAC@yahoo.com</span>
-          <span class="contact-span">214.555.5555</span>
+          <span class="contact-span">CollinCountyLULAC@gmail.com</span>
+          <span class="contact-span">214.394.3491</span>
           <a href="https://www.facebook.com/Collin-County-LULAC-Council-4537-116693833582/" class="fb-icon">
             <i class="fab fa-facebook-square fa-2x"></i>
           </a>

@@ -13,6 +13,11 @@
         <h1 class="events-header">Events</h1>
 
         <div class="event-item">
+          <span class="event-text">Advancement through Education Scholarship Fundraiser Banquet</span>
+          <span class="event-sub-text"> October 25, 2018 - Collin College Living Legends Conference Center </span>
+        </div>
+
+        <div class="event-item">
           <span class="event-text">LULAC Council #4537 Monthly Meeting</span>
           <span class="event-sub-text">March 19, 2018 - Tino’s Too Mexican Restaurant</span>
         </div>
@@ -27,10 +32,6 @@
           <span class="event-sub-text">February 1, 2018 - Download here</span>
         </div>
 
-        <div class="event-item">
-          <span class="event-text">LULAC Council #4537 Monthly Meeting</span>
-          <span class="event-sub-text">March 19, 2018 - Tino’s Too Mexican Restaurant</span>
-        </div>
       </div>
     </div>
 
@@ -202,7 +203,7 @@ export default {
   background: rgba(0,0,0,0.5);
   border-bottom: 3px solid #383838;
   height: 100px;
-  width: 75%;
+  width: 95%;
 }
 
 .event-text {

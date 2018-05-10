@@ -40,24 +40,32 @@
 
       <div class="col-md-6">
         <div class="leadership-item">
-          <span class="leadership-text">Coty Rodriguez</span>
+          <span class="leadership-text">Emelia Ahmed</span>
           <span class="leadership-sub-text">President</span>
         </div>
         <div class="leadership-item">
-          <span class="leadership-text">Adrian Rodriguez</span>
-          <span class="leadership-sub-text">Vice President</span>
-        </div>
-        <div class="leadership-item">
-          <span class="leadership-text">Shannon Rodriguez Anderson</span>
+          <span class="leadership-text">Monica Maldonado</span>
           <span class="leadership-sub-text">Vice President for Youth</span>
         </div>
         <div class="leadership-item">
-          <span class="leadership-text">Sondra Ford</span>
+          <span class="leadership-text">Pilar Quintero</span>
           <span class="leadership-sub-text">Vice President for Women</span>
+        </div>
+        <div class="leadership-item">
+          <span class="leadership-text">Mike Flores</span>
+          <span class="leadership-sub-text">Sgt. At Arms</span>
         </div>
       </div>
 
       <div class="col-md-6">
+        <div class="leadership-item">
+          <span class="leadership-text">Miguel Palacios</span>
+          <span class="leadership-sub-text">Vice President</span>
+        </div>
+        <div class="leadership-item">
+          <span class="leadership-text">Dora Deboer</span>
+          <span class="leadership-sub-text">Vice President for Youth</span>
+        </div>
         <div class="leadership-item">
           <span class="leadership-text">Lolly Flores</span>
           <span class="leadership-sub-text">Treaurer</span>
@@ -65,10 +73,6 @@
         <div class="leadership-item">
           <span class="leadership-text">Mary Alice Garza</span>
           <span class="leadership-sub-text">Secretary</span>
-        </div>
-        <div class="leadership-item">
-          <span class="leadership-text">Mike Flores</span>
-          <span class="leadership-sub-text">Sgt. At Arms</span>
         </div>
       </div>
 
