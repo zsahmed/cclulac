@@ -12,30 +12,17 @@
       <div class="col-md-6">
         <h1 class="events-header">Events</h1>
 
-        <div class="event-item">
-          <span class="event-text">Advancement through Education Scholarship Fundraiser Banquet</span>
-          <span class="event-sub-text"> October 25, 2018 - Collin College Living Legends Conference Center </span>
-        </div>
+        <div class="event-item" v-for="event in events">
+          <span class="event-text">{{ event.text }}</span>
+          <span class="event-sub-text" v-if="!event.link"> {{ event.subText }} </span>
 
-        <div class="event-item">
-          <span class="event-text">LULAC Council #4537 Monthly Meeting</span>
-          <span class="event-sub-text">March 19, 2018 - Tino’s Too Mexican Restaurant</span>
-        </div>
-
-        <div class="event-item">
-          <span class="event-text">LULAC Council #4537 Monthly Meeting</span>
-          <span class="event-sub-text">February 19, 2018 - Tino’s Too Mexican Restaurant</span>
-        </div>
-
-        <div class="event-item">
-          <span class="event-text">Scholarship Applications Open</span>
-          <span class="event-sub-text">
-            <a class="event-link" href="http://www.cclulac.org/yahoo_site_admin/assets/docs/Scholarship_Application.31152147.pdf">
-               February 1, 2018 - Download here
+          <span class="event-sub-text" v-else>
+            <a class="event-link" :href="event.link">
+               {{ event.subText}}
             </a>
           </span>
         </div>
-
+        
       </div>
     </div>
 
@@ -162,6 +149,28 @@
 
 <script>
 export default {
+  data() {
+    return {
+      events: []
+    }
+  },
+  methods: {
+    fetchEvents() {
+      this.$http.get('https://cclulac-f7a5d.firebaseio.com/event.json')
+        .then(response => { return response.json() })
+        .then(data => {
+          console.log(data);
+          for(let key in data) {
+            this.events.push(data[key]);
+          }
+          console.log(this.events);
+        });
+    }
+  },
+  created: function() {
+    console.log('hello there');
+    console.log(this.fetchEvents());
+  }
 }
 </script>
 
