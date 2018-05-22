@@ -39,40 +39,16 @@
       <h1 class="leadership-header">Leadership Team</h1>
 
       <div class="col-md-6">
-        <div class="leadership-item">
-          <span class="leadership-text">Emelia Ahmed</span>
-          <span class="leadership-sub-text">President</span>
-        </div>
-        <div class="leadership-item">
-          <span class="leadership-text">Monica Maldonado</span>
-          <span class="leadership-sub-text">Vice President for Youth</span>
-        </div>
-        <div class="leadership-item">
-          <span class="leadership-text">Pilar Quintero</span>
-          <span class="leadership-sub-text">Vice President for Women</span>
-        </div>
-        <div class="leadership-item">
-          <span class="leadership-text">Mike Flores</span>
-          <span class="leadership-sub-text">Sgt. At Arms</span>
+        <div class="leadership-item" v-for="leader in leadershipTeamCol1">
+          <span class="leadership-text">{{ leader.name }}</span>
+          <span class="leadership-sub-text">{{ leader.title }}</span>
         </div>
       </div>
 
       <div class="col-md-6">
-        <div class="leadership-item">
-          <span class="leadership-text">Miguel Palacios</span>
-          <span class="leadership-sub-text">Vice President</span>
-        </div>
-        <div class="leadership-item">
-          <span class="leadership-text">Dora Deboer</span>
-          <span class="leadership-sub-text">Vice President for Youth</span>
-        </div>
-        <div class="leadership-item">
-          <span class="leadership-text">Lolly Flores</span>
-          <span class="leadership-sub-text">Treaurer</span>
-        </div>
-        <div class="leadership-item">
-          <span class="leadership-text">Mary Alice Garza</span>
-          <span class="leadership-sub-text">Secretary</span>
+        <div class="leadership-item" v-for="leader in leadershipTeamCol2">
+          <span class="leadership-text">{{ leader.name }}</span>
+          <span class="leadership-sub-text">{{ leader.title }}</span>
         </div>
       </div>
 
@@ -130,6 +106,32 @@
 
 <script>
 export default {
+  data() {
+    return {
+      leadershipTeamCol1: [ ],
+      leadershipTeamCol2: [ ]
+    }
+  },
+  methods: {
+    fetchLeadership() {
+      this.$http.get('https://cclulac-f7a5d.firebaseio.com/leadership.json')
+        .then(response => { return response.json() })
+        .then(data => {
+          let count = 0;
+
+          for(let key in data) {
+            if(key % 2 === 0)
+              this.leadershipTeamCol1.push(data[key]);
+            else
+              this.leadershipTeamCol2.push(data[key]);
+          }
+
+        });
+    }
+  },
+  created: function() {
+    this.fetchLeadership();
+  }
 }
 </script>
 

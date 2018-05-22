@@ -22,7 +22,7 @@
             </a>
           </span>
         </div>
-        
+
       </div>
     </div>
 
@@ -159,17 +159,16 @@ export default {
       this.$http.get('https://cclulac-f7a5d.firebaseio.com/event.json')
         .then(response => { return response.json() })
         .then(data => {
-          console.log(data);
+
           for(let key in data) {
             this.events.push(data[key]);
           }
-          console.log(this.events);
+
         });
     }
   },
   created: function() {
-    console.log('hello there');
-    console.log(this.fetchEvents());
+    this.fetchEvents();
   }
 }
 </script>
