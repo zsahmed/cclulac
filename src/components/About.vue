@@ -30,7 +30,7 @@
         </p>
       </div>
       <div class="col-md-4 about-us-img">
-        <img src="../assets/about/membership.jpg">
+        <img src="../assets/about/membership.jpg" class="about-us-img-responsive">
       </div>
 
     </div>
@@ -286,11 +286,13 @@ export default {
 }
 
 .hist1-img {
-  margin-bottom: 10px;
+  margin: auto auto 10px auto;
+  display: block;
 }
 
 .hist1-text {
   display: block;
+  text-align: center;
 }
 
 h1 {
@@ -301,4 +303,15 @@ a {
   cursor: pointer;
 }
 
+@media screen and (max-width: 990px) {
+  .about-us-img-responsive {
+    display: block;
+    margin: 50px auto 100px auto;
+  }
+
+  .about-us-img {
+    margin: 0;
+    max-height: none;
+  }
+}
 </style>

@@ -412,12 +412,14 @@ h1 {
 
 .address-line {
   padding: 15px 10px 15px 10px;
+  font-size: 16px;
 }
 
 .dues-address {
   background: rgba(0,0,0,0.5);
   width: 40%;
   margin: 25px auto 35px auto;
+  border-radius: 25px;
 }
 
 .no-left-pad {
@@ -431,6 +433,24 @@ h1 {
     border-bottom: 3px solid #383838;
     height: 100px;
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 960px) {
+
+  .scholarship-reception-img {
+    display: block;
+    margin: 50px auto auto auto;
+  }
+
+  .membership-img-top {
+    display: block;
+    margin: 50px auto auto auto;
+  }
+
+  .membership-img-bottom {
+    display: block;
+    margin: 50px auto auto auto;
   }
 }
 </style>

@@ -50,8 +50,8 @@
         </div>
       </div>
 
-      <div class="col-md-6">
-        <h3 class="comm-serv-sub-header">Youth Council Volunteer and Service Opportunities</h3>
+      <div class="col-lg-6 col-md-12 col-sm-12">
+        <h3 class="comm-serv-sub-header">Volunteer and Service Opportunities</h3>
 
         <div class="comm-serv-item">
           <span class="comm-serv-text">Cena en el Barrio</span>
@@ -65,8 +65,12 @@
           <span class="comm-serv-text">Meals on Wheels</span>
           <span class="comm-serv-sub-text">Collin County Harvest Boxes</span>
         </div>
-        <div class="comm-serv-item">
+        <div class="comm-serv-item lg-pta">
           <span class="comm-serv-text">Plano ISD Parent Teacher Association</span>
+          <span class="comm-serv-sub-text">Meeting and registration day translators</span>
+        </div>
+        <div class="comm-serv-item sm-pta">
+          <span class="comm-serv-text">Plano ISD PTA</span>
           <span class="comm-serv-sub-text">Meeting and registration day translators</span>
         </div>
         <div class="comm-serv-item">
@@ -83,7 +87,7 @@
         </div>
       </div>
 
-      <div class="col-md-6 car-wash-container">
+      <div class="col-md-6 car-wash-container visible-lg">
         <img src="../assets/yc/car-wash.jpg" class="car-wash-img">
       </div>
 
@@ -209,6 +213,10 @@ export default {
   margin-top: 0px;
 }
 
+.sm-pta {
+  display: none;
+}
+
 .car-wash-container {
   vertical-align: middle;
   text-align: center;
@@ -220,4 +228,39 @@ export default {
   margin-bottom: 50px;
   max-height: 800px;
 }
+
+@media screen and (max-width: 1550px) and (min-width: 1001px){
+  .comm-serv-row-imgs{
+    max-width: 95%;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .lg-pta {
+    display: none;
+  }
+
+  .sm-pta {
+    display: inherit;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .comm-serv-sub-header {
+    margin: 30px auto 30px auto;
+  }
+
+  .comm-serv-item {
+    margin: 15px auto 15px auto;
+  }
+}
+
+@media screen and (max-width: 1000px){
+  .comm-serv-row-imgs{
+    display: block;
+    margin: 10px auto 10px auto;
+  }
+
+}
+
 </style>

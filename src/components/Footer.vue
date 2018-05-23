@@ -1,7 +1,7 @@
 <template lang="html">
   <nav class="footer navbar-inverse navbar-bottom">
     <div class="container">
-      <div class="col-md-4 left">
+      <div class="col-md-4 col-sm-4 left">
           <h4>Contact Us</h4>
           <span class="contact-span">CollinCountyLULAC@gmail.com</span>
           <span class="contact-span">214.394.3491</span>
